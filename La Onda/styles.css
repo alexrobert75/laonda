@@ -1,0 +1,1856 @@
+/* ==========================================================================
+   BARRE DE MENU HOME
+   ========================================================================== */
+
+#cssmenuhome {
+
+  width: 100%;
+  background-color: transparent;
+
+  text-align: center;
+  top: 0;
+  z-index: 100;
+  position: fixed;
+
+  
+}
+
+#cssmenuhome ul {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  line-height: 1;
+  display: block;
+  zoom: 1;
+}
+
+#cssmenuhome ul li {
+  display: inline-block;
+  padding: 0;
+  margin: 0 auto;
+}
+#cssmenuhome.align-right ul li {
+  float: right;
+}
+#cssmenuhome.align-center ul {
+  text-align: center;
+}
+#cssmenuhome ul li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 1em 2em;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  letter-spacing: 0.15em;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 1.7em;
+  position: relative;
+  -webkit-transition: color .25s;
+  -moz-transition: color .25s;
+  -ms-transition: color .25s;
+  -o-transition: color .25s;
+  transition: color .25s;
+}
+#cssmenuhome ul li a:hover {
+  color: black;
+}
+#cssmenuhome ul li a:hover:before {
+  width: 100%;
+}
+
+#cssmenuhome ul li a:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 0.2em;
+  width: 0;
+  background: white;
+  -webkit-transition: width .25s;
+  -moz-transition: width .25s;
+  -ms-transition: width .25s;
+  -o-transition: width .25s;
+  transition: width .25s;
+}
+#cssmenuhome ul li.last > a:after,
+#cssmenuhome ul li:last-child > a:after {
+  display: none;
+}
+#cssmenuhome ul li.active a {
+  color: white;
+}
+#cssmenuhome ul li.active a:before {
+  width: 100%;
+}
+#cssmenuhome.align-right li.last > a:after,
+#cssmenuhome.align-right li:last-child > a:after {
+  display: block;
+}
+#cssmenuhome.align-right li:first-child a:after {
+  display: none;
+}
+
+
+
+
+/* ==========================================================================
+   BARRE DE MENU
+   ========================================================================== */
+
+#cssmenu {
+
+  width: 100%;
+  background-color: white;
+  opacity: 0.8;
+  text-align: center;
+  top: 0;
+  z-index: 100;
+  position: fixed;
+  height: 8vh;
+
+  
+  
+}
+
+#cssmenu ul {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  line-height: 1;
+  display: block;
+  zoom: 1;
+}
+
+#cssmenu ul li {
+  display: inline-block;
+  padding: 0;
+  margin: 0 auto;
+}
+#cssmenu.align-right ul li {
+  float: right;
+}
+#cssmenu.align-center ul {
+  text-align: center;
+}
+#cssmenu ul li a {
+  color: #000000;
+  text-decoration: none;
+  display: block;
+  padding: 1em 2em;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  letter-spacing: 0.15em;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 1.7em;
+  position: relative;
+  -webkit-transition: color .25s;
+  -moz-transition: color .25s;
+  -ms-transition: color .25s;
+  -o-transition: color .25s;
+  transition: color .25s;
+}
+#cssmenu ul li a:hover {
+  color: #767070;
+}
+#cssmenu ul li a:hover:before {
+  width: 100%;
+}
+
+#cssmenu ul li a:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 0.2em;
+  width: 0;
+  background: #333333;
+  -webkit-transition: width .25s;
+  -moz-transition: width .25s;
+  -ms-transition: width .25s;
+  -o-transition: width .25s;
+  transition: width .25s;
+}
+#cssmenu ul li.last > a:after,
+#cssmenu ul li:last-child > a:after {
+  display: none;
+}
+#cssmenu ul li.active a {
+  color: #333333;
+}
+#cssmenu ul li.active a:before {
+  width: 100%;
+}
+#cssmenu.align-right li.last > a:after,
+#cssmenu.align-right li:last-child > a:after {
+  display: block;
+}
+#cssmenu.align-right li:first-child a:after {
+  display: none;
+}
+
+
+
+
+/* ==========================================================================
+   FONTS
+   ========================================================================== */
+
+
+
+@font-face {
+ font-family: 'Yanone Kaffeesatz', sans-serif;
+    letter-spacing: 0.15em;
+}
+@font-face {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+    letter-spacing: 0.15em;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  letter-spacing: 0.15em; 
+ speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+
+/*! normalize.css v2.1.3 | MIT License | git.io/normalize */
+
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+
+/**
+ * Correct `block` display not defined in IE 8/9.
+ */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+    display: block;
+}
+
+/**
+ * Correct `inline-block` display not defined in IE 8/9.
+ */
+
+audio,
+canvas,
+
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9.
+ * Hide the `template` element in IE, Safari, and Firefox < 22.
+ */
+
+[hidden],
+template {
+    display: none;
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+
+html {
+    font-family: 'Yanone Kaffeesatz', sans-serif;; /* 1 */
+    -ms-text-size-adjust: 100%; /* 2 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+	  letter-spacing: 0.15em;
+}
+
+/**
+ * Remove default margin.
+ */
+
+body {
+    margin: 0;
+}
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+
+a {
+    background: transparent;
+}
+
+/**
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
+
+a:focus {
+    outline: thin dotted;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+
+a:active,
+a:hover {
+    outline: 0;
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari 5, and Chrome.
+ */
+
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+
+abbr[title] {
+    border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+
+b,
+strong {
+    font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari 5 and Chrome.
+ */
+
+dfn {
+    font-style: italic;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+
+hr {
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+
+mark {
+    background: #ff0;
+    color: #000;
+}
+
+/**
+ * Correct font family set oddly in Safari 5 and Chrome.
+ */
+
+code,
+kbd,
+pre,
+samp {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 1em;
+	  letter-spacing: 0.15em;
+}
+
+/**
+ * Improve readability of pre-formatted text in all browsers.
+ */
+
+pre {
+    white-space: pre-wrap;
+}
+
+/**
+ * Set consistent quote types.
+ */
+
+q {
+    quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+
+small {
+    font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sup {
+    top: -0.5em;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+
+/**
+ * Remove border when inside `a` element in IE 8/9.
+ */
+
+img {
+    border: 0;
+}
+
+/**
+ * Correct overflow displayed oddly in IE 9.
+ */
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+
+/**
+ * Address margin not present in IE 8/9 and Safari 5.
+ */
+
+figure {
+    margin: 0;
+}
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+
+fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+
+legend {
+    border: 0; /* 1 */
+    padding: 0; /* 2 */
+}
+
+/**
+ * 1. Correct font family not being inherited in all browsers.
+ * 2. Correct font size not being inherited in all browsers.
+ * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
+ */
+
+button,
+input,
+select,
+textarea {
+    font-family: 'Yanone Kaffeesatz', sans-serif; /* 1 */
+    font-size: 100%; /* 2 */
+    margin: 0; /* 3 */
+	  letter-spacing: 0.15em;
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+
+button,
+input {
+    line-height: normal;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
+
+button,
+select {
+    text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+
+button,
+html input[type="button"], /* 1 */
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: button; /* 2 */
+    cursor: pointer; /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+
+button[disabled],
+html input[disabled] {
+    cursor: default;
+}
+
+/**
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+
+input[type="checkbox"],
+input[type="radio"] {
+    box-sizing: border-box; /* 1 */
+    padding: 0; /* 2 */
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+
+input[type="search"] {
+    -webkit-appearance: textfield; /* 1 */
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box; /* 2 */
+    box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+/**
+ * 1. Remove default vertical scrollbar in IE 8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
+
+textarea {
+    overflow: auto; /* 1 */
+    vertical-align: top; /* 2 */
+}
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+
+/**
+ * Remove most spacing between table cells.
+ */
+
+ 
+ 
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* ==========================================================================
+   Coming soon
+   ========================================================================== */
+
+html { font-size: 62.5%; }
+html, body { 
+  height: 100%; 
+  width: 100%; 
+  background: #78ffde;
+  color: white;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  background-color: #78ffde;
+    letter-spacing: 0.15em;
+  
+  
+}
+
+section {
+  padding: 5em 2em;
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 100%;
+}
+
+#logo {
+ width: 33%;
+ margin: auto;
+ display: block;
+}
+
+
+
+.introduction, .contact {
+  text-align: center;
+  display: table;
+  width: 100%;
+}
+h1 {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+    letter-spacing: 0.15em;
+}
+.introduction {
+
+  background-image: url('../La Onda/hemingway-gun.jpg');
+  background-repeat: repeat;
+  background-size: 100%;
+  height: 100%;
+  background-attachment: top;
+  z-index: 99;
+  position: relative;
+
+
+
+}
+
+
+.centered {
+  display: table-cell;
+  vertical-align: middle;
+  margin: 0 auto;
+  margin-bottom: 15%;
+}
+.contact {
+  background: white;
+  color: #1a1a1a;
+  border: 0.4em solid #78ffde;
+  box-sizing: border-box;
+  width: 100%;
+  height: 95%;
+  padding-bottom: 12em;
+  padding-top: 8em;
+  margin-bottom: 1%;
+ 
+}
+
+.contact#index {
+  background: white;
+  color: #1a1a1a;
+  border: 0.4em solid #78ffde;
+  box-sizing: border-box;
+  width: 100%;
+  padding-bottom: 12em;
+  padding-top: 3em;
+  margin-bottom: 1%;
+ 
+}
+
+.contact h1 {
+  font-size: 2em;
+  margin: 0 0 .5em;
+  margin-top: 3em auto;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  letter-spacing: 0.15em;
+  }
+
+.contact h2 {
+  font-size: 3em;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  text-transform: uppercase;
+    letter-spacing: 0.15em;
+}
+.contact h3 {
+  font-size: 2em;
+  font-weight: 400;
+}
+.contact address p {
+  font-size: 2em;
+  font-style: normal;
+  font-weight: 300;
+}
+
+.persontitre {
+  font-family: 'Yanone Kaffeesatz', serif;
+	font-size: 1.2em;
+	  letter-spacing: 0.15em;
+	font-weight: 300;
+
+}
+
+.person{
+    display: inline-block;
+
+    position: relative;
+    margin: auto;
+    width: 20%;
+		font-size: 1.2em;
+  
+
+}
+
+.person a {
+  color: black;
+  font-family: 'Yanone Kaffeesatz', serif;
+    letter-spacing: 0.15em;
+	font-size: 1em;
+	font-weight: 300;
+  text-decoration: none;
+  line-height: 1.3;
+}
+
+.mailsad {
+    width:100%;
+    margin: auto;
+text-align: center;
+    padding: auto;
+    margin-top: 5%;
+}
+
+.present87 {
+	width: 45%;
+	height: auto;
+	position: center;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	font-family: 'Yanone Kaffeesatz', serif;
+	  letter-spacing: 0.15em;
+	font-size: 1.6em;
+	font-weight: 150;
+	}
+
+.txta{
+text-align: justify;
+font-family: 'Yanone Kaffeesatz', serif;
+  letter-spacing: 0.15em;
+}
+	
+	.present87news {
+	width: 90%;
+	height: auto;
+	margin: 0 auto;
+	padding-top: 0;
+	text-align: left;
+	font-family: 'Yanone Kaffeesatz', serif;
+	  letter-spacing: 0.15em;
+	font-size: 1.7em;
+	font-weight: 150;
+	 margin-bottom: 15%;
+	}
+	
+	.present87 poct {
+	font-family: 'Yanone Kaffeesatz', serif;
+	  letter-spacing: 0.15em;
+	font-size: 4em;
+	font-weight: 300;
+	color: #8c8484;
+	
+	}
+	
+	.present87news poct2 {
+	font-size: 2em;
+	font-weight: 600;
+	color: black;
+	
+	}
+	
+
+
+.footaddress {
+text-align: center;
+	font-family: 'Yanone Kaffeesatz', serif;
+	  letter-spacing: 0.15em;
+	font-size: 1.6em;
+	font-weight: solid;
+	font-weight: 500;
+
+	}
+	
+	.footaddress p {
+	display: block;
+  text-align: center; 
+padding-bottom: 1%;
+  }
+  
+#news {
+width: 33%;
+display: block;
+margin: 0 auto;
+}
+
+#titrimage {
+width: 30%;
+display: block;
+margin: 0 auto;
+margin-bottom: 4em;
+}
+
+#titrimage2 {
+width: 15%;
+display: block;
+margin: 0 auto;
+margin-bottom: 3em;
+margin-top: 1em;
+}
+
+
+#trait {
+width: 28%;
+display: block;
+margin: auto;
+margin-bottom: 2em;
+}
+
+#trait2 {
+width: 28%;
+display: block;
+margin: auto;
+margin-bottom: 1em;
+margin-top: 23%;
+}
+
+#trait3 {
+width: 28%;
+display: block;
+margin: 0 auto;
+margin-top: 3.5em;
+
+}
+
+MOSAIQUE
+
+	
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ *
+ * Detailed information about this CSS: h5bp.com/css
+ *
+ * ==|== normalize ==========================================================
+ */
+
+
+/* =============================================================================
+   HTML5 display definitions
+   ========================================================================== */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
+audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
+audio:not([controls]) { display: none; }
+[hidden] { display: none; }
+
+
+/* =============================================================================
+   Base
+   ========================================================================== */
+
+
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection declarations have to be separate
+ * Also: hot pink! (or customize the background color to match your design)
+ */
+
+::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
+::selection { background: #fe57a1; color: #fff; text-shadow: none; }
+
+
+/* =============================================================================
+   Links
+   ========================================================================== */
+
+a { color: #00e; }
+a:visited { color: #551a8b; }
+a:hover { color: #06e; }
+a:focus { outline: thin dotted; }
+
+/* Improve readability when focused and hovered in all browsers: h5bp.com/h */
+a:hover, a:active { outline: 0; }
+
+
+/* =============================================================================
+   Typography
+   ========================================================================== */
+
+abbr[title] { border-bottom: 1px dotted; }
+
+b, strong { font-weight: bold; }
+
+blockquote { margin: 1em 40px; }
+
+dfn { font-style: italic; }
+
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+
+ins { background: #ff9; color: #000; text-decoration: none; }
+
+mark { background: #ff0; color: #000; font-style: italic; font-weight: bold; }
+
+/* Redeclare monospace font family: h5bp.com/j */
+pre, code, kbd, samp { font-family: monospace, serif; _font-family: 'courier new', monospace; font-size: 1em; }
+
+/* Improve readability of pre-formatted text in all browsers */
+pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
+
+q { quotes: none; }
+q:before, q:after { content: ""; content: none; }
+
+small { font-size: 85%; }
+
+/* Position subscript and superscript content without affecting line-height: h5bp.com/k */
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+
+
+/* =============================================================================
+   Lists
+   ========================================================================== */
+
+ul, ol { margin: 1em 0; padding: 0 0 0 40px; }
+dd { margin: 0 0 0 40px; }
+nav ul, nav ol { list-style: none; list-style-image: none; margin: 0; padding: 0; }
+
+
+/* =============================================================================
+   Embedded content
+   ========================================================================== */
+
+/*
+ * 1. Improve image quality when scaled in IE7: h5bp.com/d
+ * 2. Remove the gap between images and borders on image containers: h5bp.com/i/440
+ */
+
+img { border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle; }
+
+/*
+ * Correct overflow not hidden in IE9
+ */
+
+svg:not(:root) { overflow: hidden; }
+
+
+/* =============================================================================
+   Figures
+   ========================================================================== */
+
+figure { margin: 0; }
+
+
+/* =============================================================================
+   Forms
+   ========================================================================== */
+
+form { margin: 0; }
+fieldset { border: 0; margin: 0; padding: 0; }
+
+/* Indicate that 'label' will shift focus to the associated form element */
+label { cursor: pointer; }
+
+/*
+ * 1. Correct color not inheriting in IE6/7/8/9
+ * 2. Correct alignment displayed oddly in IE6/7
+ */
+
+legend { border: 0; *margin-left: -7px; padding: 0; white-space: normal; }
+
+/*
+ * 1. Correct font-size not inheriting in all browsers
+ * 2. Remove margins in FF3/4 S5 Chrome
+ * 3. Define consistent vertical alignment display in all browsers
+ */
+
+button, input, select, textarea { font-size: 100%; margin: 0; vertical-align: baseline; *vertical-align: middle; }
+
+/*
+ * 1. Define line-height as normal to match FF3/4 (set using !important in the UA stylesheet)
+ */
+
+button, input { line-height: normal; }
+
+/*
+ * 1. Display hand cursor for clickable form elements
+ * 2. Allow styling of clickable form elements in iOS
+ * 3. Correct inner spacing displayed oddly in IE7 (doesn't effect IE6)
+ */
+
+button, input[type="button"], input[type="reset"], input[type="submit"] { cursor: pointer; -webkit-appearance: button; *overflow: visible; }
+
+/*
+ * Re-set default cursor for disabled elements
+ */
+
+button[disabled], input[disabled] { cursor: default; }
+
+/*
+ * Consistent box sizing and appearance
+ */
+
+input[type="checkbox"], input[type="radio"] { box-sizing: border-box; padding: 0; *width: 13px; *height: 13px; }
+input[type="search"] { -webkit-appearance: textfield; -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box; }
+input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-search-cancel-button { -webkit-appearance: none; }
+
+/*
+ * Remove inner padding and border in FF3/4: h5bp.com/l
+ */
+
+button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
+
+/*
+ * 1. Remove default vertical scrollbar in IE6/7/8/9
+ * 2. Allow only vertical resizing
+ */
+
+textarea { overflow: auto; vertical-align: top; resize: vertical; }
+
+/* Colors for form validity */
+input:valid, textarea:valid {  }
+input:invalid, textarea:invalid { background-color: #f0dddd; }
+
+
+/* =============================================================================
+   Tables
+   ========================================================================== */
+
+table { border-collapse: collapse; border-spacing: 0; }
+td { vertical-align: top; }
+
+
+/* =============================================================================
+   Chrome Frame Prompt
+   ========================================================================== */
+
+.chromeframe { margin: 0.2em 0; background: #ccc; color: black; padding: 0.2em 0; }
+
+
+/* ==|== primary styles =====================================================
+   Author: Luke Shumard (lukeshumard.com)
+   ========================================================================== */
+
+#content {
+
+max-width: 80%;
+margin: auto;
+padding: 1em;
+
+
+}
+
+.item {
+
+	max-width: 50%;
+	float: left;
+	width: 50%;
+	margin: 0.5em auto;
+
+}
+
+
+
+.item#elie {
+
+ background-image: url('../La Onda/mosaic/elie.png');
+  background-repeat: no-repeat;
+  background-size: 90%;
+background-position: center;
+}
+
+.item#realelie {
+
+ background-image: url('../La Onda/realisateurs/mosaic/elie.png');
+  background-repeat: no-repeat;
+  background-size: 90%;
+background-position: center;
+}
+
+.item#elsajoanna {
+
+ background-image: url('../La Onda/mosaic/elsajoanna.png');
+  background-repeat: no-repeat;
+  background-size: 90%;
+background-position: center;
+}
+
+.item#andy {
+
+ background-image: url('../La Onda/mosaic/andy.png');
+  background-repeat: no-repeat;
+  background-size: 90%;
+background-position: center;
+}
+
+.item#realandy {
+
+ background-image: url('../La Onda/realisateurs/mosaic/andy.png');
+  background-repeat: no-repeat;
+  background-size: 90%;
+background-position: center;
+}
+
+.item#credits {
+
+ background-image: url('../La Onda/mosaic/credits2.png');
+  background-repeat: no-repeat;
+  background-size: 90%;
+background-position: center;
+}
+
+
+.item#leomonnet {
+
+ background-image: url('../La Onda/mosaic/leo.png');
+  background-repeat: no-repeat;
+  background-size: 90%;
+background-position: center;
+float: right;
+}
+
+.item#realleomonnet {
+
+ background-image: url('../La Onda/realisateurs/mosaic/leo.png');
+  background-repeat: no-repeat;
+  background-size: 90%;
+background-position: center;
+float: right;
+}
+
+
+.item#lola {
+
+ background-image: url('../La Onda/mosaic/lola2.png');
+  background-repeat: no-repeat;
+  background-size: 90%;
+background-position: center;
+float: right;
+}
+
+
+.featured {
+	width: 620px;
+}
+
+.item img {
+	width: 90%;
+	height: auto;
+	opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+   -moz-transition: opacity 0.5s ease-in-out;
+   -webkit-transition: opacity 0.5s ease-in-out;
+	transition: opacity 0.5s ease-in-out;
+	
+}
+.item img:hover {
+	opacity: 0;
+}
+
+.item img#nodisap:hover {
+	opacity: 100;
+}
+
+.item1 {
+
+	max-width: 50%;
+	float: left;
+	width: 50%;
+	margin: 0.5em auto;
+ background-image: url('../La Onda/mosaic/loulou2.jpg');
+  background-repeat: no-repeat;
+  background-size: 90%;
+background-position: center;
+
+
+
+}
+
+.item1#realseverin {
+
+	max-width: 50%;
+	float: left;
+	width: 50%;
+	margin: 0.5em auto;
+ background-image: url('../La Onda/realisateurs/mosaic/severin muet.png');
+  background-repeat: no-repeat;
+  background-size: 90%;
+background-position: center;
+
+
+
+}
+
+
+
+.item1 img {
+	width: 90%;
+	height: auto;
+  transition: opacity 0.5s ease-in-out;
+   -moz-transition: opacity 0.5s ease-in-out;
+   -webkit-transition: opacity 0.5s ease-in-out;
+	transition: opacity 0.5s ease-in-out;
+}
+.item1 img:hover {
+    opacity: 0;
+}
+
+
+.featured img {
+  width: 620px;
+  height: auto;
+}
+
+
+
+
+/* Titles */
+h1 {
+  font-family: 'Yanone Kaffeesatz', serif;
+  font-weight: normal;
+    letter-spacing: 0.15em;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  color: #000;
+  letter-spacing: .2em;
+  line-height: 1;
+  text-align: center;
+  margin: 0;
+  display: inline;
+}
+
+h1 a {
+  color: #000;
+}
+
+header {
+	text-align: center;
+	margin-top: 0.8em;
+}
+
+header:after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 1px;
+  margin: 0.8em auto;
+  background-color: #111;
+}
+
+
+
+/* ==|== media queries ======================================================
+   EXAMPLE Media Query for Responsive Design.
+   This example overrides the primary ('mobile first') styles
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+
+
+
+/* ==|== non-semantic helper classes ========================================
+   Please define your styles before this section.
+   ========================================================================== */
+
+/* For image replacement */
+.ir { border:0; font: 0/0 a; text-shadow: none; color: transparent; background-color: transparent; }
+
+/* Hide from both screenreaders and browsers: h5bp.com/u */
+.hidden { display: none !important; visibility: hidden; }
+
+/* Hide only visually, but have it available for screenreaders: h5bp.com/v */
+.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+
+/* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: h5bp.com/p */
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+
+/* Hide visually and from screenreaders, but maintain layout */
+.invisible { visibility: hidden; }
+
+/* Contain floats: h5bp.com/q */
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { *zoom: 1; }
+
+
+
+/* ==|== print styles =======================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+  * { background: transparent !important; color: black !important; box-shadow:none !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; } /* Black prints faster: h5bp.com/s */
+  a, a:visited { text-decoration: underline; }
+  a[href]:after { content: " (" attr(href) ")"; }
+  abbr[title]:after { content: " (" attr(title) ")"; }
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }  /* Don't show links for images, or javascript/internal links */
+  pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+  thead { display: table-header-group; } /* h5bp.com/t */
+  tr, img { page-break-inside: avoid; }
+  img { max-width: 100% !important; }
+  @page { margin: 0.5cm; }
+  p, h2, h3 { orphans: 3; widows: 3; }
+  h2, h3 { page-break-after: avoid; }
+}
+
+
+	
+.centragemosaic{
+display: block;
+margin: 0 auto;
+}
+
+
+.videosreal {
+
+padding: 1em;
+max-width: 70%;
+
+}
+
+#croix{
+float: right;
+
+width: 30px;
+
+}
+
+
+#nomsreals{
+
+width: 16em;
+margin: 0;
+opacity: 1;
+}
+
+
+
+  .btn.icon-arrow-bottom {
+    position: absolute;
+    bottom: 0%;
+	right: 0;
+	left: 0;
+	margin-right: auto;
+	margin-left: auto;
+
+  }
+
+.icon-arrow-bottom:before {
+  content: "NEWS";
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-weight: 100;
+    letter-spacing: 0.15em;
+}
+
+.btn {
+  font-size: 1.7em;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  padding: 1em;
+    letter-spacing: 0.15em;
+  border: 1px solid white;
+  border-bottom-color: transparent;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+
+ 
+}
+.btn:hover {
+  cursor: pointer;
+  border-color: inherit;
+
+  }
+.btn.icon-arrow-bottom {
+  color: white;
+  clear: both;
+  display: block;
+  width: 2.6em;
+bottom: 0%;
+cursor: pointer;
+
+  
+}
+.btn.icon-arrow-bottom:hover {
+ background-color: #3de1c7;
+  color: ;
+  opacity: 0.7;
+}
+
+
+
+.vimeo-standard {
+    width: 45%;
+	height: 15em;
+    position:relative;
+    margin: 2.5% auto;
+	margin-top: 0;
+    float: left;
+}
+.vimeo-video-2 {
+    margin-right: 5%;
+ margin-left: 5%;
+}
+.vimeo-wrapper {
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+}
+
+.vimeo-wrapper2 {
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+    margin-right: : 2%;
+}
+
+.txtcom{
+    margin-left: 2%;
+   } 
+
+.txtreal{
+width: 100%;
+display: inline-block;
+}
+
+
+#videonews {
+margin: 0 auto;
+float: left;
+padding-right: 2em;
+width: 50%;
+height: 28vw;
+	
+}
+
+
+/* ==========================================================================
+   VERSION MOBILE
+   ========================================================================== */
+
+
+
+
+
+@media screen and (max-width: 376px) {
+#cssmenu {
+
+  width: 100%;
+  background-color: white;
+  opacity: 0.8;
+  text-align: center;
+  top: 0;
+  z-index: 100;
+  position: fixed;
+  height: 8vh;
+
+  
+  
+}
+
+#cssmenu ul {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  line-height: 1;
+  display: block;
+  zoom: 1;
+}
+
+#cssmenu ul li {
+  display: inline-block;
+  padding: 0;
+  margin: 0 auto;
+}
+#cssmenu.align-right ul li {
+  float: right;
+}
+#cssmenu.align-center ul {
+  text-align: center;
+}
+#cssmenu ul li a {
+  color: #000000;
+  text-decoration: none;
+  display: block;
+  padding: 1em 2em;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  letter-spacing: 0.15em;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 1em;
+  position: relative;
+  -webkit-transition: color .25s;
+  -moz-transition: color .25s;
+  -ms-transition: color .25s;
+  -o-transition: color .25s;
+  transition: color .25s;
+}
+#cssmenu ul li a:hover {
+  color: #767070;
+}
+#cssmenu ul li a:hover:before {
+  width: 100%;
+}
+
+#cssmenu ul li a:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 0.2em;
+  width: 0;
+  background: #333333;
+  -webkit-transition: width .25s;
+  -moz-transition: width .25s;
+  -ms-transition: width .25s;
+  -o-transition: width .25s;
+  transition: width .25s;
+}
+#cssmenu ul li.last > a:after,
+#cssmenu ul li:last-child > a:after {
+  display: none;
+}
+#cssmenu ul li.active a {
+  color: #333333;
+}
+#cssmenu ul li.active a:before {
+  width: 100%;
+}
+#cssmenu.align-right li.last > a:after,
+#cssmenu.align-right li:last-child > a:after {
+  display: block;
+}
+#cssmenu.align-right li:first-child a:after {
+  display: none;
+}
+
+
+
+#cssmenuhome {
+
+  width: 100%;
+  background-color: transparent;
+  text-align: center;
+  top: 0;
+  z-index: 100;
+  position: fixed;
+
+  
+}
+
+#cssmenuhome ul {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  line-height: 1;
+  display: block;
+  zoom: 1;
+}
+
+#cssmenuhome ul li {
+  display: inline-block;
+  padding: 0;
+  margin: 0 auto;
+}
+#cssmenuhome.align-right ul li {
+  float: right;
+}
+#cssmenuhome.align-center ul {
+  text-align: center;
+}
+#cssmenuhome ul li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 1em 2em;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  letter-spacing: 0.15em;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 1em;
+  position: relative;
+  -webkit-transition: color .25s;
+  -moz-transition: color .25s;
+  -ms-transition: color .25s;
+  -o-transition: color .25s;
+  transition: color .25s;
+}
+#cssmenuhome ul li a:hover {
+  color: black;
+}
+#cssmenuhome ul li a:hover:before {
+  width: 100%;
+}
+
+#cssmenuhome ul li a:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 0.2em;
+  width: 0;
+  background: white;
+  -webkit-transition: width .25s;
+  -moz-transition: width .25s;
+  -ms-transition: width .25s;
+  -o-transition: width .25s;
+  transition: width .25s;
+}
+#cssmenuhome ul li.last > a:after,
+#cssmenuhome ul li:last-child > a:after {
+  display: none;
+}
+#cssmenuhome ul li.active a {
+  color: white;
+}
+#cssmenuhome ul li.active a:before {
+  width: 100%;
+}
+#cssmenuhome.align-right li.last > a:after,
+#cssmenuhome.align-right li:last-child > a:after {
+  display: block;
+}
+#cssmenuhome.align-right li:first-child a:after {
+  display: none;
+}
+
+
+#titrimage2 {
+width: 55%;
+display: block;
+margin: 0 auto;
+margin-bottom: 3em;
+}
+
+
+#logo {
+ width: 70%;
+ margin: auto;
+ display: block;
+}
+
+
+.btn {
+  font-size: 1em;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  padding: 1em;
+    letter-spacing: 0.15em;
+  border: 1px solid white;
+  border-bottom-color: transparent;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+
+ 
+}
+
+.btn.icon-arrow-bottom {
+  color: white;
+  clear: both;
+  display: block;
+  width: 3em;
+    bottom: 0%;
+	right: 0;
+	left: 0;
+	margin-right: auto;
+	margin-left: auto;
+cursor: pointer;
+
+  
+}
+
+
+
+#nomsreals{
+
+width: 12em;
+margin: 0;
+opacity: 1;
+}
+
+#content {
+
+max-width: 95%;
+margin: auto;
+padding: 1em;
+
+
+}
+}
+
+@media screen and (max-width: 834px) {
+
+.person{
+    margin: 5%;
+    width: 80%;
+		font-size: 0.9em;
+  
+
+}
+
+}
+
+@media screen and (max-width: 600px) {
+
+.footaddress {
+text-align: center;
+	font-family: 'Yanone Kaffeesatz', serif;
+	  letter-spacing: 0.15em;
+	font-size: 0.8em;
+	font-weight: solid;
+	font-weight: 600;
+	padding: 2em;
+	padding-top: 0;
+	padding-bottom: 0;
+	}
+
+}
+
+@media screen and (max-width: 570px) {
+
+.present87 {
+	width: 80%;
+	height: auto;
+	position: center;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	font-family: 'Yanone Kaffeesatz', serif;
+	  letter-spacing: 0.15em;
+	font-size: 1.2em;
+	font-weight: 150;
+	}
+
+.txta{
+text-align: justify;
+font-family: 'Yanone Kaffeesatz', serif;
+  letter-spacing: 0.15em;
+}
+
+}
+
+@media screen and (max-aspect-ratio: 1000/744) {
+	.introduction {
+
+  background-image: url('../La Onda/hemingway-gun.jpg');
+  background-repeat: repeat;
+background-size: cover;  
+  height: 100%;
+  background-position: center;
+  z-index: 99;
+  position: relative;
+
+
+
+}
+}
+
+@media screen and (max-width: 483px) {
+
+#videonews {
+margin: 0 auto;
+display: block;
+padding-bottom: 2em;
+width: 90%;
+height: auto;
+	
+}
+}
+
+
+
+@media screen and (min-width: 1500px) {
+#content {
+
+max-width: 60%;
+margin: auto;
+padding: 1em;
+
+}
+}
